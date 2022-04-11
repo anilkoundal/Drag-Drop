@@ -114,9 +114,11 @@ function init() {
       stack: '.connected-sortable ul',
       stop: function(event, ui) {
         //alert("New position: " + ui.item.index());
-			var v = parseInt(ui.item.index()) + 1;
-			var uiid = parseInt(ui.item[0].id);
-		}
+		var v = parseInt(ui.item.index()) + 1;
+		var uiid = parseInt(ui.item[0].id);
+		alert(v);
+		alert(uiid);
+	}
     }).disableSelection().addTouch();
      
 }
